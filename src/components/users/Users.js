@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 
 import User from "./User";
 import {url, urlUsers} from "../../configAPI";
+import './Users.css';
 
 const urlResponse = url + urlUsers;
 

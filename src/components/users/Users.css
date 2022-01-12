@@ -1,7 +1,7 @@
 .usesFrame {
+    background: cornflowerblue;
     grid-area: a;
     border: 1px solid #333333;
-    width: 200px;
-    height: 100px;
+    height: 50vh;
     overflow-y: scroll;
 }

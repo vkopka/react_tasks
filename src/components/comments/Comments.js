@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 
+import './Comments.css';
 import Comment from "./Comment";
 import {url, urlComments} from "../../configAPI";
 

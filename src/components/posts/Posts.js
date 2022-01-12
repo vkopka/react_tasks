@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 
+import './Posts.css';
 import Post from "./Post";
 import {url, urlPosts} from "../../configAPI";
 
