@@ -1,0 +1,10 @@
+.mainFrame {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh);
+    grid-row-gap: 5px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "a b"
+    "c c";
+}
