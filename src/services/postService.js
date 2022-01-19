@@ -16,4 +16,7 @@ const getPost = (id) => {
     );
 };
 
-export {getPosts, getPost};
+export {
+    getPosts,
+    getPost
+};

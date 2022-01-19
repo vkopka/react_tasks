@@ -1,7 +1,8 @@
 import {useEffect, useState} from 'react';
 
-import User from "./User";
 import './Users.css';
+
+import User from "./User";
 import {getUsers} from "../../services/userService";
 
 const Users = () => {

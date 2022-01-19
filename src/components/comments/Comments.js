@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 
 import './Comments.css';
+
 import Comment from "./Comment";
 import {getComments} from "../../services/commentService";
 

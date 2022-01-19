@@ -16,4 +16,7 @@ const getComment = (id) => {
     );
 };
 
-export {getComments, getComment};
+export {
+    getComments,
+    getComment
+};

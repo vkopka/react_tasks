@@ -16,4 +16,7 @@ const getUser = (id) => {
     );
 };
 
-export {getUsers, getUser};
+export {
+    getUsers,
+    getUser
+};
