@@ -10,7 +10,7 @@ const Users = () => {
 
     useEffect(() => {
         getUsers().then(
-            (value) => setUsers(value)
+            (value) => setUsers([...value])
         );
     }, []);
 

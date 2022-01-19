@@ -10,7 +10,7 @@ const Posts = () => {
 
     useEffect(() => {
         getPosts().then(
-            (value) => setPosts(value)
+            (value) => setPosts([...value])
         );
     }, []);
 

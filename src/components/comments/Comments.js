@@ -10,7 +10,7 @@ const Comments = () => {
 
     useEffect(() => {
         getComments().then(
-            (value) => setComments(value)
+            (value) => setComments([...value])
         );
     }, []);
 
