@@ -9,4 +9,11 @@ const getPosts = () => {
     );
 };
 
-export {getPosts};
+const getPost = (id) => {
+    return (
+        fetch(urlResponse + '/' + id)
+            .then((response) => response.json())
+    );
+};
+
+export {getPosts, getPost};

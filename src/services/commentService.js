@@ -9,4 +9,11 @@ const getComments = () => {
     );
 };
 
-export {getComments};
+const getComment = (id) => {
+    return (
+        fetch(urlResponse + '/' + id)
+            .then((response) => response.json())
+    );
+};
+
+export {getComments, getComment};
