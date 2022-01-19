@@ -2,17 +2,15 @@ import {useEffect, useState} from 'react';
 
 import './Comments.css';
 import Comment from "./Comment";
-import {url, urlComments} from "../../configAPI";
-
-const urlResponse = url + urlComments;
+import {getComments} from "../../services/commentService";
 
 const Comments = () => {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        fetch(urlResponse)
-            .then((response) => response.json())
-            .then((json) => setComments(json));
+        getComments().then(
+            (value) => setComments(value)
+        );
     }, []);
 
     return (

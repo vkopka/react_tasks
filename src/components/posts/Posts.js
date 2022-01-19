@@ -2,17 +2,15 @@ import {useEffect, useState} from 'react';
 
 import './Posts.css';
 import Post from "./Post";
-import {url, urlPosts} from "../../configAPI";
-
-const urlResponse = url + urlPosts;
+import {getPosts} from "../../services/postService";
 
 const Posts = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch(urlResponse)
-            .then((response) => response.json())
-            .then((json) => setPosts(json));
+        getPosts().then(
+            (value) => setPosts(value)
+        );
     }, []);
 
     return (

@@ -1,18 +1,16 @@
 import {useEffect, useState} from 'react';
 
 import User from "./User";
-import {url, urlUsers} from "../../configAPI";
 import './Users.css';
-
-const urlResponse = url + urlUsers;
+import {getUsers} from "../../services/userService";
 
 const Users = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetch(urlResponse)
-            .then((response) => response.json())
-            .then((json) => setUsers(json));
+        getUsers().then(
+            (value) => setUsers(value)
+        );
     }, []);
 
     return (
